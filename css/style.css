@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Poiret+One&display=swap');
+/* font-family: "Poiret One", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kulim Park", sans-serif;
+}
+#skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  #skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .link-to-menu {
+    color: var(--color--backtotop);
+    font-size: .7rem;
+    font-family: "Poiret One", sans-serif;
+    text-decoration: underline;
+}
+:root{
+    --color--background: #fba834ab;
+    --color--background--vivid:#FBA834;
+    --color--paragraph: #000000;
+
+    --color--h1:#333A73;
+    --color--h2:#333A73;
+    --color--link--header:#ff0000;
+    --color--backtotop:#0000fa;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 800px;
+    text-align: center;
+}
+.head{
+    padding: 2rem 0;
+    background-color: var(--color--background);
+}
+h1{
+    text-transform: uppercase;
+
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    color: var(--color--h1);
+}
+.p_header{
+    text-transform: uppercase;
+    font-weight: 400;
+    font: 1.4rem;
+    color: var(--color--paragraph);
+}
+.menu {
+    width: 100%;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--h1);
+}
+
+.ul_menu {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.list_menu {
+    list-style: none;
+    padding: .9rem 1.5rem;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.list_menu:hover {
+    border-right: 2px solid var(--color--background);
+    border-bottom: 2px solid var(--color--background);
+}
+.link_menu{
+    color: var(--color--background--vivid);
+}
+
+.image {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pricipal {
+    max-height: 100%;
+}
+
+/* MAIN */
+/* SECTION GAUDI */
+main {
+    padding: 0 145px;
+}
+
+.margin {
+    margin: 40px 0;
+}
+
+h2 {
+    border-bottom: 2px solid var(--color--background--vivid);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--color--h2);
+}
+
+.gaudi_photo{
+    margin-right: 30px;
+}
+.container_section_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_section_main {
+    height: 500px;
+}
+
+.photo_section {
+    height: 100%;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+.photo_section:hover {
+    border-radius: 0;
+}
+.p_section_main {
+    margin-bottom: 20px;
+    color: var(--color--paragraph);
+    letter-spacing: 2px;
+    font-family: "Poiret One", sans-serif;
+}
+.edificio_photo{
+    margin-left: 30px;
+}
+/* GALERIA */
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.img_galeria>img {
+    width: 520px;
+    height: 100%;
+}
+
+/* MODERNISMO */
+.img_section_modernismo{
+    width: 100%;
+    height: 600px;
+    background-image: url(/img/casa_mila.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.container_modernismo_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text_modernismo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem 0;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--background);
+}
+.form{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+fieldset{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border: 3px solid var(--color--background--vivid);
+}
+legend{
+    padding: 0 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+}
+form > input{
+    margin: 5px 0;
+    padding: .5rem .7rem;
+}
+.space{
+    margin: 10px 0;
+}
+.p_footer{
+    font-family: "Poiret One", sans-serif;
+}
+.asterisco{
+    color: #ff0000;
+}
+button{
+    padding: .5rem 1rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: .2rem solid var(--color--h1);
+    color: var(--color--h1);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--color--background);
+    border-radius: 10px;
+}
+.social{
+    padding: 1rem 1.2rem;
+}
+h3{
+    font-size: 1rem;
+    color: black;
+    font-family: "Poiret One", sans-serif;
+}
+.social-media{
+    display: flex;
+    padding: 10px 0;
+}
+.img_social{
+    height: 40px;
+    padding: 5px 10px;
+}
+.author{
+    margin-left: .4rem;
+    color: #ff0000;
+}
